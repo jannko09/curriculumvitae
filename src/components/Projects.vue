@@ -51,13 +51,13 @@ export default {
          {
           title: "SaaS Feedback application",
           description:
-            "Overseeing all development efforts on PHP/Vue/SQL/AWS/GraphQl stacked SaaS applications. Application is in real use in few mid sized companies",
+            "Overseeing all development efforts on PHP/Vue/SQL/AWS/GraphQl/Cordova stacked SaaS application with mobile app and web UI. Application is in real use in few mid sized companies",
           image: "devcore.png",
         },
          {
           title: "SSR website with CMS",
           description:
-            "Created Nuxt SSR website with storyblok CMS running on Vercel",
+            "Created Nuxt SSR website with storyblok CMS running on Vercel.",
           image: "freelance.png",
         },
         {
@@ -66,7 +66,7 @@ export default {
         {
           title: ".NETCore API",
           description:
-            ".NETCore Api with repository pattern. Repository patterned CRUD Api with Sql database. Open API and EFCore ORM. Project created to fast scaffold CRUD api for hobby projects",
+            ".NETCore Api with repository pattern. Repository patterned CRUD Api with Sql database. Open API and EFCore ORM. Project created to fast scaffold CRUD api for hobby projects.",
           image: "Swag.jpg",
         },
         {
