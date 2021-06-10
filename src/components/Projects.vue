@@ -102,7 +102,7 @@ export default {
   height: 100%;
   overflow-y: auto;
   background: #222244;
-  max-height: 75%;
+  max-height: 40%;
 }
 .projects--content__container-content-card {
   display: flex;
