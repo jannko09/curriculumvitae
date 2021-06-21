@@ -28,8 +28,9 @@ Vue.config.productionTip = false
 const router = new VueRouter({
   routes: [
     {
-      path: '/',
-      redirect: '/work'
+      path: '*',
+      redirect: '/work',
+      component: Work,
   },
   {
       component: Work,
