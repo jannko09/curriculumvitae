@@ -28,7 +28,7 @@
         :frameworks="cloud.frameworks"
       >
       </SkillCard>
-      <div class="content__container-skillshero-content-category">Other</div>
+      <!-- <div class="content__container-skillshero-content-category">Other</div>
       <SkillCard
         v-for="(item, index) in other"
         :key="'other' + index"
@@ -37,7 +37,7 @@
         :intro="item.intro"
         :frameworks="item.frameworks"
       >
-      </SkillCard>
+      </SkillCard> -->
     </div>
   </div>
 </template>
@@ -51,45 +51,14 @@ export default {
   data() {
     return {
       other: [
-        {
-          topic: "Agile",
-          intro: "Agile with scrum framework",
-          description:
-            "Knowledgeable of working in Agile environment with scrum framework",
-          frameworks: [
-            {
-              framework_topic: "Scrum",
-              framework_value: 100,
-            },
-          ],
-        },
-        {
-          topic: "BizDev",
-          intro: "Global business development",
-          description:
-            "Proven track-record from global SaaS sales. Well-trained working in the client surface.",
-          frameworks: [
-            {
-              framework_topic: "Consulting",
-              framework_value: 80,
-            },
-            {
-              framework_topic: "Sales",
-              framework_value: 80,
-            },
-            {
-              framework_topic: "Globalization",
-              framework_value: 80,
-            },
-          ],
-        },
+   
       ],
       clouds: [
         {
           topic: "Cloud",
           intro: "CI/CD",
           description:
-            "Some experience with cloud engineering in AWS, GCM, AZURE. Sufficient with the big picture of build pipelines, user management, hosting services, VMs and load balancing.",
+            "Experienced with cloud engineering in AWS, GCM, AZURE. Sufficient with the big picture of build pipelines, user management, hosting services, VMs and load balancing.",
           frameworks: [
             {
               framework_topic: "Azure",
@@ -142,7 +111,7 @@ export default {
           topic: "JavaScript",
           intro: "Interactive UI",
           description:
-            "Very confident with modern client-side development using JavaScript Frameworks. Some projects with NodeJS on the server-side.",
+            "Very confident with modern client-side development using JavaScript Frameworks & NodeJS.",
           frameworks: [
             {
               framework_topic: "Vue",
@@ -150,11 +119,11 @@ export default {
             },
             {
               framework_topic: "React",
-              framework_value: 75,
+              framework_value: 80,
             },
             {
               framework_topic: "Angular",
-              framework_value: 75,
+              framework_value: 60,
             },
           ],
         },

@@ -1,11 +1,7 @@
 <template>
   <div class="work--content__container-content">
     <div class="content__container-content-topics">
-      <div
-        class="work--content__container-content-card"
-        v-for="(item, index) in topics"
-        :key="'work' + index"
-      >
+      <div class="work--content__container-content-card" v-for="(item, index) in topics" :key="'work' + index">
         <div class="work--content__container-content-sidebar">
           <div class="work--content__container-content-company">
             {{ item.company }}
@@ -37,24 +33,32 @@ export default {
   data() {
     return {
       topics: [
+      {
+          title: "Software Engineer (Freelance)",
+          company: "Freelancer",
+          location: "Helsinki, Finland",
+          time: "09/2021 - present",
+          description:
+            "Freelancing as a software engineer. I have worked with a variety of clients, from startups to large companies. I have worked with a variety of technologies, from React to AWS using NodeJS lambdas.",
+        },
+        {
+          title: "Software Engineer",
+          company: "Solita",
+          location: "Helsinki, Finland",
+          time: "06/2021 - 09/2021",
+          description:
+            "Project to develop a heavy traffic API for a large Finnish company in hospitality industry. Used technologies: Azure, Optimizely, .NET, CosmosDB"
+        },
         {
           title: "Software Engineer",
           company: "Mitsubishi Logisnext Europe",
           location: "Järvenpää, Finland",
-          time: "03/2019 - present",
+          time: "01/2019 - 06/2021",
           description:
-            "Full-stack software development with various technologies (ASP.NETcore, Vue, SQL..).Cloud engineering Azure (hosting, authentication, analytics...). Test strategy planning with E2E and NFR testing frameworks. Implementation of testing strategy with frameworks e,g Robot Framework. Agile with scrum framework",
+            "Full-stack software development with various technologies (ASP.NETcore, Vue, SQL..). Cloud engineering Azure (hosting, authentication, analytics...). Test strategy planning with E2E and NFR testing frameworks. Implementation of testing strategy with frameworks e,g Robot Framework. Agile with scrum framework",
         },
         {
-          title: "Junior SW Consultant",
-          company: "Academic Work Consulting",
-          location: "Helsinki, Finland",
-          time: "12/2018 - 04/2019",
-          description:
-            "Accelerated learning path for JavaScript. JavaScript, Bootstrap, HTML5, CSS, NodeJS, Express, PostgreSQL, MongoDB, WordPress, Angular, React, React Native, AWS, Heroku, Redis.",
-        },
-        {
-          title: "Developer",
+          title: "Digital Specialist",
           company: "Liana Technologies",
           location: "Hong Kong",
           time: "08/2017 - 05/2018",
@@ -62,7 +66,7 @@ export default {
             "Digital solutions consultant. Website optimizations, digital lead generation, A/B testing & newsletter development",
         },
         {
-          title: "Market Researcher",
+          title: "Digital Specialist",
           company: "Tokyo Tourism Office",
           location: "Tokyo, Japan",
           time: "03/2016 - 08/2016",
@@ -76,15 +80,7 @@ export default {
           time: "09/2012 - 09/2015",
           description:
             "Customer service. Responsibilities as a superior and educating new employees. In-depth knowledge of automotive industry.",
-        },
-        {
-          title: "Sales Developer",
-          company: "Bookers Group Oy",
-          location: "Helsinki, Finland",
-          time: "10/2011 - 04/2012",
-          description:
-            "B2B & B2C new customer acquisition for various companies in Finland. Elisa(ICT), Fennia (Car insurance), Pohjola (Insurances).",
-        },
+        }
       ],
     };
   },
@@ -95,12 +91,14 @@ export default {
 .work--content__container-content-main {
   padding: 3% 12%;
 }
+
 .work--content__container-content-sidebar {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .work--content__container-content-title {
   letter-spacing: 1.5px;
   padding: 4px;
@@ -109,6 +107,7 @@ export default {
   color: #aaccff;
   font-family: $lato;
 }
+
 .work--content__container-content-company {
   letter-spacing: 1.5px;
   padding: 2px;
@@ -117,6 +116,7 @@ export default {
   color: #aaccff;
   font-family: $lato;
 }
+
 .work--content__container-content-locationandtime {
   padding: 2px;
   letter-spacing: 1.5px;
@@ -125,6 +125,7 @@ export default {
   color: #aaccff;
   font-family: $lato;
 }
+
 .work--content__container-content-time {
   padding: 2px;
   font-family: $lato;
@@ -150,6 +151,7 @@ export default {
   border-top: 10px solid grey;
   border-bottom: 10px solid grey;
 }
+
 @media only screen and (max-width: 600px) {
   .work--content__container-content-card {
     display: flex;
@@ -159,16 +161,20 @@ export default {
 }
 
 .work--content__container-content {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 .work--content__container-content {
   overflow-y: auto;
   background: #222244;
 }
 
 .work--content__container-content::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
+  /* Safari and Chrome */
 }
 
 .content__container-content-topics {

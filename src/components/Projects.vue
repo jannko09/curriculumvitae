@@ -42,12 +42,7 @@ export default {
         {
           title: "Professional Projects:",
         },
-        {
-          title: "Warehouse management system",
-          description:
-            "Worked on .NET/vue/SQL/Azure stacked WMS system from start to customer.",
-          image: "rocla.png",
-        },
+     
          {
           title: "SaaS Feedback application",
           description:

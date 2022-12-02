@@ -10,7 +10,7 @@
     <div class="presentation_container-content">
       <div class="presentation__container-presentation">
         On a mission to create best user experience with interactiveness in all
-        digital. Programming since 2017.
+        digital. Programming since 2017. AWS developer & Scrum certified. 
       </div>
       <div class="presentation__container-contact">
         <div class="presentation__container-contact-block">
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="presentation__container-contact-block">
-          <a href="mailto:jannekokki09@gmail.com">
+          <a href="mailto:jannekokki@outlook.com">
             <font-awesome-icon
               class="contact-icon"
               :icon="['fa', 'envelope']"
@@ -56,7 +56,7 @@
             ></font-awesome-icon>
           </a>
           <div class="presentation__container-contact-text">
-            jannekokki09[at]gmail.com
+            jannekokki@outlook.com
           </div>
         </div>
       </div>
